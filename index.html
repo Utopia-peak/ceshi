@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            width: 3.75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <script src="jq/jquery-3.6.0.min.js"></script> -->
+    <script>
+        window.onload = function() {
+
+            let obj = {
+                name: "王",
+                age: 18,
+                sam: {
+                    name: "嵌套的对象"
+                }
+            }
+
+            let o = {}
+
+            //     es6 的浅拷贝的方法，
+            let sss = Object.assign(o, obj)
+                //     修改之后会影响之前的数据
+            o.sam.name = "丝袜"
+
+            console.log(sss)
+        }
+    </script>
+
+    <div id="wrap">
+
+    </div>
+</body>
+
+</html>
